@@ -21,8 +21,8 @@ class add{
 SUPER_COOL_INT program
 	add ADD boop
 	SUPER_COOL_INT a=1, b=2, c=32
-  show << "Enter Three Whole Numbers for the program to add for you!\n"
-  gimmy >> a >> b >> c
+	show << "Enter Three Whole Numbers for the program to add for you!\n"
+	gimmy >> a >> b >> c
 	_ADD> a _ADD> b _ADD> c
 	show << __ADD
 done
