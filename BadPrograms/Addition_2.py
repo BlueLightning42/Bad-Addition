@@ -3,18 +3,21 @@
 def add_Three(three):
   '''Used strings cause originally was going write if two == '1+2': return 3 etc then realised there was 3 inputs and if I generated all cases it would be a large file and meh'''
   num = eval(three) + add_Three.carry
+  add_Three.carry = 0
   if num > 10:
     num -= 10
     add_Three.carry += 1
   else:
     add_Three.carry = 0
+  if num > 10:
+    num -= 10
+    add_Three.carry += 1
   if num > 10:
     num -= 10
     add_Three.carry += 1
   else:
     add_Three.carry = 0
   return str(num)
-add_Three.carry = 0
 
 A = str(input("enter A:")).strip()
 B = str(input("enter B:")).strip()
